@@ -10,8 +10,8 @@ public class Book
     [StringLength(200, MinimumLength = 2)]
     public string Name { get; set; }
     [Required]
-    public string Author { get; set; }
     [StringLength(200, MinimumLength = 2)] 
+    public string Author { get; set; }
     [Required]
     [DataType(DataType.Date)]
     public DateTime PublishDate { get; set; }

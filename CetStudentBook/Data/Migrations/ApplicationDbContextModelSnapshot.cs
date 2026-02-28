@@ -32,7 +32,8 @@ namespace CetStudentBook.Data.Migrations
 
                     b.Property<string>("Author")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<bool>("IsSecondHand")
                         .HasColumnType("bit");
@@ -46,7 +47,6 @@ namespace CetStudentBook.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("PublishDate")
-                        .HasMaxLength(200)
                         .HasColumnType("datetime2");
 
                     b.HasKey("ID");
