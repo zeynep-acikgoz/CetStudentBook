@@ -111,14 +111,19 @@ dotnet ef database update --context ApplicationDbContext
 ## 4- Screenshots
 
 ### Books List Page
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/99a56c33-b152-4f02-82d4-cd3fe356f5d6" />
 
 ![Books List Page](Screenshots/books_list_page.png)
 
 ### Edit Page (Validation Example)
 
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/fe7f0f5c-2a87-415c-8109-01be69206d4b" />
+
 ![Edit Page with Validation](Screenshots/edit_page_with_validation.png)
 
 ###  Delete Confirmation Page
+
+<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/dc663ced-f2c9-4cfe-9731-49eaa5b48610" />
 
 ![Delete Confirmation Page](Screenshots/delete_confirmation.png)
 
