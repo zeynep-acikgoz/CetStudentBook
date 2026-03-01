@@ -3,7 +3,7 @@
 <h2>Books List</h2>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Create New Book</a>
+    <a asp-action="Create" class="btn btn-success">Create New Book</a>
 </p>
 
 <table class="table table-striped">
@@ -25,9 +25,18 @@
             <td>@item.Author</td>
             <td>@item.PublishDate.ToShortDateString()</td>
             <td>@item.PageCount</td>
-            <td>@(item.IsSecondHand ? "Yes" : "No")</td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Edit</a> |
+                @if (item.IsSecondHand)
+                {
+                    <span style="color: green; font-style: italic;">✔ Yes</span>
+                }
+                else
+                {
+                    <span style="color: red; font-style: italic;">✘ No</span>
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-dark btn-sm">Edit</a> 
                 <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Delete</a>
             </td>
         </tr>
